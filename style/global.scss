@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{
+    @font-face {
+        font-family: 'FilsonProMedium';
+        src: local("FilsonProMedium") format("otf") url("../public/fonts/FilsonProMedium.otf");
+    }
+}
