@@ -5,6 +5,30 @@
 @layer base{
     @font-face {
         font-family: 'FilsonProMedium';
-        src: local("FilsonProMedium") format("otf") url("../public/fonts/FilsonProMedium.otf");
+        src: url("../public/fonts/FilsonProMedium.otf") format("opentype");
     }
+    @font-face {
+        font-family: 'FilsonProLight';
+        src: url("../public/fonts/FilsonProLight.otf") format("opentype");
+    }
+    @font-face {
+        font-family: 'FilsonProBold';
+        src: url("../public/fonts/FilsonProBold.otf") format("opentype");
+    }
+}
+
+h2 {
+    @apply w-full text-white text-5xl mt-12
+}
+
+h3 {
+    @apply w-full text-white text-sm mt-2 font-FilsonLight
+}
+
+.container-box {
+    @apply 2xl:justify-between content-center items-center text-center mt-24
+}
+
+button {
+    @apply bg-blue text-white px-4 py-3 rounded-xl w-1/2 mt-5 text-black
 }

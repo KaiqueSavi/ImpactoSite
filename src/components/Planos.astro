@@ -1,18 +1,96 @@
 ---
 interface Props {
-	title: string;
-	body: string;
-	href: string;
-    price: number;
+    mega: string;
+    description: string;
+    imagem: string;
 }
 
-const { href, title, body, price } = Astro.props;
+const { mega, imagem, description } = Astro.props;
 ---
-
-<div class="flex flex-col p-6 mx-auto max-w-lg text-center text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white blur-2xl">
-    <h3 class="mb-4 text-2xl font-semibold">{title}</h3>
-    <p class="font-light text-gray-500 sm:text-lg dark:text-gray-400">{body}</p>
-    <div class="flex justify-center items-baseline my-8">
-        <span class="mr-2 text-5xl font-extrabold">{price}</span>
+<!-- CAIXINHA DE PLANO 1 -->
+<div>
+    <div class="w-96 pb-[5%] h-[800px] relative">
+        <div
+            class="md:w-96 w-full h-[700px] left-0 top-[58px] absolute bg-gradient-to-br from-white to-white-200 rounded-lg border border-white backdrop-blur-sm mix-blend-soft-light"
+        >
+        </div>
+        <div class="w-80 h-80 left-1/2 -translate-x-1/2 -top-20 absolute">
+            <img src={imagem} alt="" />
+        </div>
+        <div class="absolute z-50 w-full items-center">
+            <div class="w-full h-10 text-center items-center mt-32">
+                <span
+                    class="text-white text-4xl font-medium font-['Filson Pro']"
+                    >{mega}</span
+                ><span
+                    class="text-white text-4xl font-FilsonLight font-['Filson Pro']"
+                    >MEGA</span
+                ><br /><br />
+                <span class="text-stone-300 text-6md font-bold font-FilsonLight"
+                    >{description}</span
+                >
+                <!-- ICONE COM TEXTO -->
+                <div>
+                    <div
+                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                    >
+                        <img
+                            class="mr-6"
+                            src={"./public/Group 2.png"}
+                            alt="Icone Personalizado"
+                        />
+                        <span
+                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                        >
+                            Wi-fi Premium</span
+                        >
+                    </div>
+                    <div
+                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                    >
+                        <img
+                            class="mr-6"
+                            src={"./public/Group 2.png"}
+                            alt="Icone Personalizado"
+                        />
+                        <span
+                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                        >
+                            Wi-fi Premium</span
+                        >
+                    </div>
+                    <div
+                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                    >
+                        <img
+                            class="mr-6"
+                            src={"./public/Group 2.png"}
+                            alt="Icone Personalizado"
+                        />
+                        <span
+                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                        >
+                            Wi-fi Premium</span
+                        >
+                    </div>
+                    <div
+                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                    >
+                        <img
+                            class="mr-6"
+                            src={"./public/Group 2.png"}
+                            alt="Icone Personalizado"
+                        />
+                        <span
+                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                        >
+                            Wi-fi Premium</span
+                        >
+                    </div>
+                </div>
+                <!-- ICONE COM TEXTO -->
+                <button class="btn-assine">CONTRATE JÁ</button>
+            </div>
+        </div>
     </div>
 </div>

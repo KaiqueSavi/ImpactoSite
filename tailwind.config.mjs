@@ -7,12 +7,15 @@ export default {
 				'blue': '#00C3FF',
 				'purple': '#9400FF',
 				'white': '#fff',
+				'dark-blue': '#001886',
 			},
 			aspectRatio: {
 				'Default': 21/9,
 			},
 			fontFamily: {
-				'Filson': ['FilsonPro', 'sans-serif']
+				'Filson': ['FilsonProMedium', 'sans-serif'],
+				'FilsonLight': ['FilsonProLight', 'sans-serif'],
+				'FilsonBold': ['FilsonProBold', 'sans-serif']
 			}
 		},
 	},
