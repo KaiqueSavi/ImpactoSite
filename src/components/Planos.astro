@@ -3,18 +3,19 @@ interface Props {
     mega: string;
     description: string;
     imagem: string;
+    value: string;
 }
 
-const { mega, imagem, description } = Astro.props;
+const { mega, imagem, description, value } = Astro.props;
 ---
 <!-- CAIXINHA DE PLANO 1 -->
 <div>
-    <div class="w-96 pb-[5%] h-[800px] relative">
+    <div class="w-full md:w-96 pb-[5%] h-[800px] relative">
         <div
-            class="md:w-96 w-full h-[700px] left-0 top-[58px] absolute bg-gradient-to-br from-white to-white-200 rounded-lg border border-white backdrop-blur-sm mix-blend-soft-light"
+            class=" w-full md:w-96 h-[700px] left-0 top-[58px] absolute bg-gradient-to-br from-white to-white-200 rounded-xl border border-white backdrop-blur-sm mix-blend-soft-light"
         >
         </div>
-        <div class="w-80 h-80 left-1/2 -translate-x-1/2 -top-20 absolute">
+        <div class="w-full md:w-80 h-80 ml-4 left-1/2 -translate-x-1/2 -top-20 absolute">
             <img src={imagem} alt="" />
         </div>
         <div class="absolute z-50 w-full items-center">
@@ -88,6 +89,7 @@ const { mega, imagem, description } = Astro.props;
                         >
                     </div>
                 </div>
+                <span class="text-white text-4xl"><span class="text-white text-sm">R$</span>{value}</span><br>
                 <!-- ICONE COM TEXTO -->
                 <button class="btn-assine">CONTRATE JÁ</button>
             </div>

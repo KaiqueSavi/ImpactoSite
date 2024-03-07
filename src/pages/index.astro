@@ -1,10 +1,11 @@
 ---
 import Layout from "../layouts/Layout.astro";
 import Planos from "../components/Planos.astro";
-import Header from "../components/header.astro";
 import Banner from "../components/banner.astro";
 import BoxCard from "../components/boxcard.astro";
 import Area from "../components/CoverageArea.astro";
+import FAQ from "../components/FAQ.astro";
+import FooterIndex from "../components/footer.astro";
 ---
 
 <Layout title="Welcome to Teste.">
@@ -20,7 +21,7 @@ import Area from "../components/CoverageArea.astro";
 			</h3>
 		</div>
 		<!-- CAIXINHA DE BENEFICIOS -->
-		<div class="w-full px-24 flex flex-wrap justify-around mt-10">
+		<div class="w-full px-8 md:px-24 flex flex-wrap justify-around mt-10">
 			<BoxCard
 				imagem="../public/icon1.svg"
 				tittle="WI-FI Premium"
@@ -52,24 +53,57 @@ import Area from "../components/CoverageArea.astro";
 		</div>
 		<!-- ÁREA DE COBERTURA -->
 		<!-- CAIXINHA DE PLANOS -->
-		<div class="w-full px-24 flex flex-wrap justify-around mt-10">
-			<Planos
+		<div class="w-full px-4 flex flex-col md:flex-row justify-around mt-10">
+			<Planos		
 				imagem="../public/icon1.svg"
 				mega="100"
 				description="Plano para toda a familia"
+				value="109,90"
+			/>
+			<Planos
+				imagem="../public/iconPurple.png"
+				mega="100"
+				description="Plano para toda a familia"
+				value="109,90"
 			/>
 			<Planos
 				imagem="../public/icon1.svg"
 				mega="100"
 				description="Plano para toda a familia"
-			/>
-			<Planos
-				imagem="../public/icon1.svg"
-				mega="100"
-				description="Plano para toda a familia"
+				value="109,90"
 			/>
 		</div>
 		<!-- CAIXINHA DE PLANOS -->
 		<Banner logo="planos.mp4" />
+		<!-- FAQ -->
+		<FAQ />
+		<!-- FAQ -->
+		<!-- CAIXINHA DE BENEFICIOS -->
+		<div class="container-box">
+			<h2>INTERNET FIBRA ÓPTICA</h2>
+			<h3>
+				It is a long established fact that a reader will be distracted
+				by the
+			</h3>
+		</div>
+		<div class="w-full px-24 flex flex-wrap justify-around mt-10">
+			<BoxCard
+				imagem="../public/Group 1.png"
+				tittle="WI-FI Premium"
+				subtittle="Internet de alta velocidade"
+			/>
+			<BoxCard
+				imagem="../public/icon1.svg"
+				tittle="WI-FI Premium"
+				subtittle="Internet de alta velocidade"
+			/>
+			<BoxCard
+				imagem="../public/icon1.svg"
+				tittle="WI-FI Premium"
+				subtittle="Internet de alta velocidade"
+			/>
+		</div>
+		<!-- CAIXINHA DE BENEFICIOS -->
+		<FooterIndex />
 	</main>
 </Layout>

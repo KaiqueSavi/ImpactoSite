@@ -1,0 +1,54 @@
+<div class="items-center justify-center w-full i">
+    <h2 class="items-center flex justify-center">FAQ</h2>
+    <h3 class="tems-center flex justify-center">
+        It is a long established fact that a reader will be distracted
+        by the
+    </h3>
+</div>
+<div class="w-full justify-center md:flex items-center md:flex-row wrap pt-12">
+    <div class="md:w-[33%] w-[100%] items-center justify-center flex ">
+        <div class="content">
+            <span>Pergunta 1</span >
+            <p>Resposta 1</p>
+
+            <span>Pergunta 2</span>
+            <p>Resposta 2</p>
+
+            <span>Pergunta 3</span>
+            <p>Resposta 3</p>
+
+            <span>Pergunta 4</span>
+            <p>Resposta 4</p>
+        </div>
+    </div>
+    <div class="md:w-[33%] w-[100%] items-center justify-center flex pt-10 md:pt-0">
+        <img src="../../public/Object.png" alt="">
+    </div>
+    <div class="md:w-[33%] w-[100%] items-center justify-center flex ">
+        <div class="content">
+            <span>Pergunta 1</span >
+            <p>Resposta 1</p>
+
+            <span>Pergunta 2</span>
+            <p>Resposta 2</p>
+
+            <span>Pergunta 3</span>
+            <p>Resposta 3</p>
+
+            <span>Pergunta 4</span>
+            <p>Resposta 4</p>
+        </div>
+    </div>
+</div>
+<script>
+    const spans = document.querySelectorAll('.content span')
+
+    function ativo() {
+        // @ts-ignore
+        this.nextElementSibling.classList.toggle('active')
+    }
+
+    spans.forEach((item) =>{
+        item.addEventListener('click', ativo)
+    })
+</script>

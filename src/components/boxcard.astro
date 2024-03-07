@@ -8,20 +8,20 @@ interface Props {
 const { tittle, subtittle, imagem } = Astro.props;
 ---
 
-<div class="w-96 h-96 relative">
+<div class="w-[100%] md:w-96 h-96 ease-in-out relative ">
     <div
-        class="md:w-96 w-full h-80 left-0 top-[58px] absolute bg-gradient-to-br from-white to-white-200 rounded-lg border border-white backdrop-blur-sm mix-blend-soft-light"
+        class="md:w-96 w-full h-80 left-0 top-[58px] absolute bg-gradient-to-br from-white to-white/10 rounded-lg border border-white backdrop-blur-sm mix-blend-soft-light"
     >
     </div>
-    <div class="w-80 h-80 left-1/2 -translate-x-1/2 -top-20 absolute">
+    <div class="w-80 h-80 ml-3 left-1/2 -translate-x-1/2 -top-20 absolute">
         <img src={imagem} alt="" />
     </div>
-    <div class="absolute z-50 w-full items-center">
+    <div class="absolute z-50 w-full  items-center">
         <div class="w-full h-10 text-center items-center mt-32">
             <span class="text-white text-4xl font-medium font-['Filson Pro']">{tittle}</span><br><br>
             <span class="text-stone-300 text-6md font-bold font-FilsonLight">{subtittle}</span>
             <div class="w-full mt-5 text-center text-sky-500 text-md font-medium font-['Filson Pro']">
-                <span class="text-center">VER PLANOS</span>
+                <a class="pointer-cursor" href="#"><span class="text-center">VER PLANOS</span></a>
             </div>
         </div>
     </div>
