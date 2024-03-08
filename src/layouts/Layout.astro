@@ -7,6 +7,7 @@ interface Props {
 
 const { title } = Astro.props;
 import Header from "../components/header.astro";
+import FooterIndex from "../components/footer.astro";
 
 ---
 
@@ -26,9 +27,10 @@ import Header from "../components/header.astro";
 			rel="stylesheet"
 		/>
 	</head>
-	<body class="font-Filson">
+	<body class="font-Filson animate-fade">
 		<Header logo="logo.svg" />
 		<slot />
+		<FooterIndex />	
 	</body>
 </html>
 <style is:global>
