@@ -8,14 +8,17 @@ interface Props {
 
 const { mega, imagem, description, value } = Astro.props;
 ---
+
 <!-- CAIXINHA DE PLANO 1 -->
 <div>
-    <div class="w-full md:w-96 pb-[5%] h-[800px] relative">
+    <div class="w-full md:w-80 pb-[5%] h-[800px] relative">
         <div
-            class=" w-full md:w-96 h-[700px] left-0 top-[58px] absolute bg-gradient-to-br from-white to-white-200 rounded-xl border border-white backdrop-blur-sm mix-blend-soft-light"
+            class="w-full md:w-80 h-[700px] left-0 top-[58px] absolute bg-gradient-to-br from-white to-white-200 rounded-xl border border-white backdrop-blur-sm mix-blend-soft-light"
         >
         </div>
-        <div class="w-full md:w-80 h-80 ml-4 left-1/2 -translate-x-1/2 -top-20 absolute">
+        <div
+            class="w-full md:w-80 h-80 ml-4 left-1/2 -translate-x-1/2 -top-20 absolute"
+        >
             <img src={imagem} alt="" />
         </div>
         <div class="absolute z-50 w-full items-center">
@@ -31,65 +34,67 @@ const { mega, imagem, description, value } = Astro.props;
                     >{description}</span
                 >
                 <!-- ICONE COM TEXTO -->
-                <div>
+                <div class="items-center justify-center text-center ">
                     <div
-                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                        class="flex flex-row pl-16 mt-6 items-center relative mb-10"
                     >
                         <img
-                            class="mr-6"
-                            src={"./public/Group 2.png"}
+                            class="mr-6 h-10"
+                            src={"../public/WifiIcone.png"}
                             alt="Icone Personalizado"
                         />
                         <span
-                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                            class="text-white text-lg absolute h-10 ml-14 top-0 flex items-center"
                         >
                             Wi-fi Premium</span
                         >
                     </div>
                     <div
-                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                        class="flex flex-row pl-16 mt-6 items-center relative mb-10"
                     >
                         <img
-                            class="mr-6"
-                            src={"./public/Group 2.png"}
+                            class="mr-6 h-10"
+                            src={"../public/WifiIcone.png"}
                             alt="Icone Personalizado"
                         />
                         <span
-                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                            class="text-white text-lg absolute h-10 ml-14 top-0 flex items-center"
                         >
                             Wi-fi Premium</span
                         >
                     </div>
                     <div
-                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                        class="flex flex-row pl-16 mt-6 items-center relative mb-10"
                     >
                         <img
-                            class="mr-6"
-                            src={"./public/Group 2.png"}
+                            class="mr-6 h-10"
+                            src={"../public/WifiIcone.png"}
                             alt="Icone Personalizado"
                         />
                         <span
-                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                            class="text-white text-lg absolute h-10 ml-14 top-0 flex items-center"
                         >
                             Wi-fi Premium</span
                         >
                     </div>
                     <div
-                        class="flex flex-row align-baseline pl-16 mt-6 item-center relative mb-10"
+                        class="flex flex-row pl-16 mt-6 items-center relative mb-10"
                     >
                         <img
-                            class="mr-6"
-                            src={"./public/Group 2.png"}
+                            class="mr-6 h-10"
+                            src={"../public/WifiIcone.png"}
                             alt="Icone Personalizado"
                         />
                         <span
-                            class="text-white text-lg absolute ml-16 top-0 translate-y-1/2"
+                            class="text-white text-lg absolute h-10 ml-14 top-0 flex items-center"
                         >
                             Wi-fi Premium</span
                         >
                     </div>
                 </div>
-                <span class="text-white text-4xl"><span class="text-white text-sm">R$</span>{value}</span><br>
+                <span class="text-white text-4xl"
+                    ><span class="text-white text-sm">R$</span>{value}</span
+                ><br />
                 <!-- ICONE COM TEXTO -->
                 <button class="z-10 btn-assine">CONTRATE JÁ</button>
             </div>
